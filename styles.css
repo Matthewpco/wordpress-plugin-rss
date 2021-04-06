@@ -1,0 +1,65 @@
+/* remove padding margin and border set flex and position*/
+selector ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    
+}
+selector ul li {
+    margin: 0;
+    padding: 0!important;
+    display: flex;
+    flex-flow: column;
+    --window: calc(100vw/3);
+    --unit: 1.5vw;
+    width: calc(var(--window) - var(--unit));
+}
+#news ul > li > div.rss_image  {
+    margin: 0;
+}
+#news > div > div > div {
+    padding: 0!important;
+}
+selector .title {
+    display: flex;
+    z-index: 0;
+}
+#news  ul > li > span {
+    height: auto;
+}
+selector .feedzy-rss .rss_item {
+    border-bottom: none;
+}
+/* Calculate image height based on width and aspect ratio */
+selector div .rss_image {;
+    --ar: 1.575;
+    --window: calc(100vw/3);
+    --unit: 1.5vw;
+    height: calc(var(--window)/var(--ar))!important;
+    width: calc(var(--window) - var(--unit));
+    min-width: 315px;
+    min-height: 200px;
+}
+#news > div > div > div > div > div > div > ul > li:nth-child(2) {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+/* font styles */
+ selector ul li a {
+    font-size: 1.5rem;
+    font-family: Stainless-Regular;
+    font-weight: bold;
+     
+     color: #fff
+}
+ div.rss_content {
+    text-align: left!important;
+    font-size: 1rem;
+    font-family: Stainless-Regular;
+    
+    color: #fff
+}
+
+selector ul li .title, selector ul li .rss_content {
+    padding-left: 2%;
+}
